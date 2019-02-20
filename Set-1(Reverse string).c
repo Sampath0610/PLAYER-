@@ -1,18 +1,16 @@
 #include<stdio.h>
-int main()
-{
-	char str[10000],len,i,j,temp;
-	scanf("%s",str);
-	len=strlen(str);
-	i=0;
-	j=len-1;
-	while(i<j)
-	{
-		temp=str[i];
-		str[i]=str[j];
-		str[j]=temp;
-		i++;
-		j--;
-	}
-	printf("%s",str);
+void main()
+{char a[20],len,i,j,temp;
+scanf("%s",a);
+len=strlen(a);
+i=0;
+j=len-1;
+while(i<j)
+{temp=a[i];
+a[i]=a[j];
+a[j]=temp;
+i++;
+j--;
+}
+printf("%s",a);
 }
