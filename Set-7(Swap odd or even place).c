@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include<string.h>
-int main(void) {
+void main()
+{
 	char s[10],t;
 	int i,l;
 	scanf("%[^\n]s",s);
 	l=strlen(s);
 	if(l%2==0)
 	{
-	for(i=0;i<l;i+=2)
+	for(i=0;i<l;i+=1)
              {
              t=s[i];
              s[i]=s[i+1];
@@ -17,7 +18,7 @@ int main(void) {
 	}
     else
     {
-    for(i=0;i<l;i+=3)
+    for(i=0;i<l;i+=2)
              {
              t=s[i];
              s[i]=s[i+1];
