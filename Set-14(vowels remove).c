@@ -2,7 +2,7 @@
 #include<string.h>
 void main()
 {
-  char p[20],b,i;
+  char p[40],b,i;
   printf("Enter the string");
   scanf("%s",p);
   b=strlen(p);
